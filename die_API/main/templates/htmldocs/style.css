@@ -1,0 +1,64 @@
+:root{
+  --white:#FFFDFF;
+  --blue:#1b6ac6;
+  --rose:#F7D7AD;
+  --dark:#101010;
+}
+*{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family:serif;
+}
+body{background-color:var(--blue);}
+header{
+  display:flex;
+  position:absolute;
+  width:100vw;
+  height:20vh;
+  top:0;
+  left:0;
+  margin:0;
+  padding:0;
+  justify-content:center;
+  align-items:center;
+  background:var(--white);
+}
+.imgcont{
+  display:flex;
+  position:relative;
+  width:40vh;
+  height:100vh;
+}
+.Das_API{
+  display:flex;
+  position:absolute;
+  left:0;
+  bottom:20vh;
+  width:100vw;
+  height:75vh;
+  background:var(--rose);
+}
+.fake_footer{
+  display:flex;
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100vw;
+  height:5vh;
+  justify-content:center;
+  align-self:center;
+}
+.fake_footer div{
+  position:absolute;
+}
+.fake_footer div p{color:var(--dark);}
+@media screen and (min-width:900px){.fake_footer{align-self:flex-end;}}
+@media screen and (max-width:900px){.imgcont{width:35vh;}
+.fake_footer div p{font-size:14px;}}
+@media screen and (max-width:700px){
+  header{height:15vh;}
+  .Das_API{height:80vh}
+  .imgcont{width:30vh;}
+}
